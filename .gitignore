@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Dataset e ferramentas baixadas manualmente
+data/cicids2017/
+tools/
+
+# Payloads grandes do sensor — baixados pelo host uma vez (ver README, seção 2.5)
+VMs/wheels/
+VMs/jdk8-linux-x64.tar.gz
+VMs/CICFlowMeter/bin/logs/
+
+# Capturas e arquivos temporários gerados durante a validação
+*.pcap
+scripts/_in_*/
+scripts/flows_*/
+VMs/_chk*.sh
+VMs/_probe.sh
+VMs/setup.log
+
+# Imagens ignoradas em geral, menos o painel de exemplo (evidência do experimento)
+*.png
+!VMs/painel.png
+
+# Marcadores ignorados em geral, menos o do experimento de exemplo
+VMs/marcadores*.txt
+!VMs/marcadores.txt
